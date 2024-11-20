@@ -20,3 +20,9 @@
 {"level":"info","message":"Controller: Requesting news from NewsService","timestamp":"2024-11-20T15:13:18.142Z"}
 {"level":"info","message":"Controller: Successfully returned news to the client","timestamp":"2024-11-20T15:13:19.251Z"}
 {"level":"info","message":"News Accessor Service is running on port 3010","timestamp":"2024-11-20T15:18:05.087Z"}
+{"level":"info","message":"News Accessor Service is running on port 3010","timestamp":"2024-11-20T17:20:19.740Z"}
+{"level":"info","message":"News Accessor Service is running on port 3010","timestamp":"2024-11-20T17:21:03.365Z"}
+{"level":"info","message":"News Accessor Service is running on port 3010","timestamp":"2024-11-20T17:21:23.733Z"}
+{"level":"info","message":"News Accessor Service is running on port 3010","timestamp":"2024-11-20T17:26:27.111Z"}
+{"level":"info","message":"Controller: Requesting news from NewsService","timestamp":"2024-11-20T17:27:23.815Z"}
+{"level":"info","message":"Controller: Successfully returned news to the client","timestamp":"2024-11-20T17:27:25.171Z"}
