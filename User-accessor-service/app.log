@@ -1,0 +1,44 @@
+2024-11-17T21:51:43.623Z [INFO]: User Accessor Service running on port 3001
+2024-11-17T21:51:47.455Z [INFO]: Connected to MongoDB successfully
+2024-11-17T21:54:05.693Z [INFO]: User Accessor Service running on port 3001
+2024-11-17T21:54:08.544Z [INFO]: Connected to MongoDB successfully
+2024-11-17T21:55:27.278Z [INFO]: User Accessor Service running on port 3001
+2024-11-17T21:55:29.131Z [INFO]: Connected to MongoDB successfully
+2024-11-18T16:31:16.119Z [INFO]: User Accessor Service running on port 3001
+2024-11-18T16:31:22.689Z [INFO]: Connected to MongoDB successfully
+2024-11-20T09:13:00.887Z [INFO]: User Accessor Service running on port 3001
+2024-11-20T09:13:02.499Z [INFO]: Connected to MongoDB successfully
+2024-11-20T09:13:07.673Z [INFO]: Fetched user with ID: 673ceb0364f033736c1f0a9f
+2024-11-20T09:13:21.112Z [INFO]: User created: 673da8309b9ad48c95e1b229
+2024-11-20T09:13:32.976Z [INFO]: User created: 673da83c9b9ad48c95e1b22b
+2024-11-20T09:14:15.755Z [INFO]: User Accessor Service running on port 3001
+2024-11-20T09:14:17.348Z [INFO]: Connected to MongoDB successfully
+2024-11-20T09:14:18.564Z [INFO]: User created: 673da86af024160d055d93a6
+2024-11-20T09:14:54.314Z [INFO]: User created: 673da88ef024160d055d93aa
+2024-11-20T09:21:30.195Z [INFO]: User Accessor Service running on port 3001
+2024-11-20T09:21:31.761Z [INFO]: Connected to MongoDB successfully
+2024-11-20T09:21:33.408Z [INFO]: Received request to create a new user
+2024-11-20T09:21:33.409Z [INFO]: Controller: Creating user with data: undefined
+2024-11-20T09:21:33.410Z [INFO]: Service: Creating user with data: undefined
+2024-11-20T09:21:33.420Z [ERROR]: Service: Error creating user: User validation failed: email: Path `email` is required., name: Path `name` is required.
+2024-11-20T09:21:33.420Z [ERROR]: Controller: Error creating user: User validation failed: email: Path `email` is required., name: Path `name` is required.
+2024-11-20T09:21:54.182Z [INFO]: Received request to create a new user
+2024-11-20T09:21:54.183Z [INFO]: Controller: Creating user with data: undefined
+2024-11-20T09:21:54.183Z [INFO]: Service: Creating user with data: undefined
+2024-11-20T09:21:54.185Z [ERROR]: Service: Error creating user: User validation failed: email: Path `email` is required., name: Path `name` is required.
+2024-11-20T09:21:54.186Z [ERROR]: Controller: Error creating user: User validation failed: email: Path `email` is required., name: Path `name` is required.
+2024-11-20T09:22:14.908Z [INFO]: User Accessor Service running on port 3001
+2024-11-20T09:22:16.384Z [INFO]: Connected to MongoDB successfully
+2024-11-20T09:22:18.171Z [INFO]: Received request to create a new user
+2024-11-20T09:22:18.172Z [INFO]: Controller: Creating user with data: undefined
+2024-11-20T09:22:18.172Z [INFO]: Service: Creating user with data: undefined
+2024-11-20T09:22:18.180Z [ERROR]: Service: Error creating user: User validation failed: email: Path `email` is required., name: Path `name` is required.
+2024-11-20T09:22:18.181Z [ERROR]: Controller: Error creating user: User validation failed: email: Path `email` is required., name: Path `name` is required.
+2024-11-20T09:23:03.479Z [INFO]: User Accessor Service running on port 3001
+2024-11-20T09:23:05.122Z [INFO]: Connected to MongoDB successfully
+2024-11-20T09:23:06.839Z [INFO]: Received request to create a new user
+2024-11-20T09:23:06.839Z [INFO]: Controller: Creating user with data: {"name":"John Doe","email":"rsh610475@example.com","preferences":["Tech","News"],"communicationChannel":["email"]}
+2024-11-20T09:23:06.840Z [INFO]: Service: Creating user with data: {"name":"John Doe","email":"rsh610475@example.com","preferences":["Tech","News"],"communicationChannel":["email"]}
+2024-11-20T09:23:06.992Z [INFO]: Controller: User created successfully with ID: 673daa7a562ba7d62cbae281
+2024-11-20T09:33:36.555Z [INFO]: User Accessor Service running on port 3001
+2024-11-20T09:33:38.129Z [INFO]: Connected to MongoDB successfully
