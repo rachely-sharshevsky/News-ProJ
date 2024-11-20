@@ -24,13 +24,15 @@ app.post('/user-creation', async (req, res) => {
     }
 });
 
+
 // Route for getting a user by ID
 app.get('/users/:id', validateObjectId, async (req, res) => {
     try {
-        logger.info(`Received request to fetch user with ID: ${req.params.id}`);
-        const user = await userController.getUserById(req);
+        const userId = req.params.id;
+        logger.info(`Received request to fetch user with ID: ${userId}`);
+        const user = await userController.getUserById(req); // שינוי להעברת userId בלבד
         if (!user) {
-            logger.warn(`User with ID: ${req.params.id} not found`);
+            logger.warn(`User with ID: ${userId} not found`);
             return res.status(404).json({ error: 'User not found' });
         }
         res.json(user);
@@ -39,7 +41,6 @@ app.get('/users/:id', validateObjectId, async (req, res) => {
         res.status(500).json({ error: 'Failed to fetch user' });
     }
 });
-
 // Route for updating user preferences
 app.put('/users/:id/preferences', validateObjectId, async (req, res) => {
     try {

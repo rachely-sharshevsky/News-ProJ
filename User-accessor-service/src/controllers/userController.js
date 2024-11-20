@@ -16,7 +16,6 @@ const userController = {
         }
     },
 
-    // Get a user by ID
     async getUserById(req, res) {
         try {
             const userId = req.params.id;
@@ -26,13 +25,18 @@ const userController = {
                 logger.warn(`Controller: User with ID ${userId} not found.`);
                 return res.status(404).json({ error: 'User not found' });
             }
-            res.json(user);
+            return res.status(200).json({
+                id: user._id,
+                name: user.name,
+                email: user.email,
+                preferences: user.preferences,
+                communicationChannel: user.communicationChannel,
+            });
         } catch (error) {
             logger.error(`Controller: Error fetching user: ${error.message}`);
             res.status(500).json({ error: 'Failed to fetch user' });
         }
     },
-
     // Update user preferences
     async updatePreferences(req, res) {
         try {

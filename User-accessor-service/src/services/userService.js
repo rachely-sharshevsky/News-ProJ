@@ -14,17 +14,21 @@ const userService = {
         }
     },
 
-    // Fetch a user by ID
     async getUserById(userId) {
         try {
             logger.info(`Service: Fetching user with ID: ${userId}`);
-            return await User.findById(userId);
+            const user = await User.findById(userId).select('_id name email preferences communicationChannel');
+            if (!user) {
+                logger.warn(`Service: User with ID ${userId} not found`);
+                return null; // החזר ערך ברור אם המשתמש לא נמצא
+            }
+            return user;
         } catch (error) {
             logger.error(`Service: Error fetching user: ${error.message}`);
-            throw error;
+            throw new Error('Failed to fetch user');
         }
     },
-
+    
     // Update user preferences
     async updatePreferences(userId, preferences) {
         try {

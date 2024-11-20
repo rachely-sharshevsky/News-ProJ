@@ -1,17 +1,16 @@
 {
-    "name": "user-management-service",
+    "name": "News-manager-service",
     "version": "1.0.0",
-    "description": "Service for accessing user data",
-    "main": "app.js",
+    "description": "Service that manages user requests and communicates with News Accessor Service",
+    "main": "src/app.js",
     "scripts": {
-      "start": "node app.js"
+        "start": "node src/app.js"
     },
     "dependencies": {
-      "@dapr/dapr": "^3.4.1",
-      "dotenv": "^16.4.5",
-      "express": "^4.18.2",
-      "mongoose": "^7.8.2",
-      "winston": "^3.17.0"
+        "@dapr/dapr": "^3.4.1",
+        "dotenv": "^16.4.5",
+        "express": "^4.18.2",
+        "axios": "^1.5.0",
+        "winston": "^3.8.2"
     }
-  }
-  
+}

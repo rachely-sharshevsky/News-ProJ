@@ -1,22 +1,20 @@
-# Use the official Node.js image as a base
-FROM node:16-alpine
+# Use Node.js official image as the base image
+FROM node:20-alpine
 
-# Set the working directory inside the container
-WORKDIR /usr/src/app
+# Set the working directory in the container
+WORKDIR /app
 
-# Copy package.json and package-lock.json
+# Copy package.json and package-lock.json files
 COPY package*.json ./
 
 # Install dependencies
 RUN npm install
 
-# Copy the source code to the container
+# Copy the application code to the container
 COPY . .
 
+# Expose the application port
+EXPOSE 3011
 
-
-# Expose the application's port
-EXPOSE 3000
-
-# Run daprd and the app
-CMD ["node", "src/app.js"]
+# Start the application
+CMD ["npm", "start"]
