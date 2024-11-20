@@ -4,7 +4,7 @@ const { validateUser } = require('../utils/validation');
 
 // Dapr configuration
 const daprHost = "127.0.0.1"; // Local sidecar address
-const daprPort = "3500";      // Sidecar HTTP port
+const daprPort = "3501";      // Sidecar HTTP port
 const daprClient = new DaprClient(daprHost, daprPort);
 
 class UserService {
