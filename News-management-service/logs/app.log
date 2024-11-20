@@ -1,0 +1,30 @@
+2024-11-20T16:44:34.550Z [INFO]: News Manager Service is running on port 3011
+2024-11-20T16:44:42.230Z [INFO]: News Manager Service is running on port 3011
+2024-11-20T16:47:00.251Z [INFO]: News Manager Service is running on port 3011
+2024-11-20T16:52:36.643Z [INFO]: News Manager Service is running on port 3011
+2024-11-20T16:53:04.089Z [INFO]: News Manager Service is running on port 3011
+2024-11-20T16:53:41.622Z [INFO]: Controller: Requesting news from the news-accessor-service
+2024-11-20T16:53:41.623Z [INFO]: Service: Invoking news-accessor-service with category technology
+2024-11-20T16:53:42.710Z [ERROR]: Controller: Error fetching news - Service: Error fetching news - Failed with status 500
+2024-11-20T17:00:17.887Z [INFO]: Controller: Requesting news from the news-accessor-service
+2024-11-20T17:00:17.887Z [INFO]: Service: Invoking news-accessor-service with category technology
+2024-11-20T17:00:18.905Z [ERROR]: Controller: Error fetching news - Service: Error fetching news - Failed with status 500
+2024-11-20T17:02:02.342Z [INFO]: Controller: Requesting news from the news-accessor-service
+2024-11-20T17:02:02.342Z [INFO]: Service: Invoking news-accessor-service with category technology
+2024-11-20T17:02:03.366Z [INFO]: Controller: Successfully returned news to the client
+2024-11-20T17:18:05.174Z [INFO]: News Manager Service is running on port 3011
+2024-11-20T17:19:57.747Z [INFO]: News Manager Service is running on port 3011
+2024-11-20T17:20:24.140Z [INFO]: Controller: Requesting news from the news-accessor-service
+2024-11-20T17:20:24.140Z [INFO]: Service: Invoking news-accessor-service with category technology
+2024-11-20T17:20:25.195Z [ERROR]: Controller: Error fetching news - Service: Error fetching news - Failed with status 500
+2024-11-20T17:21:06.972Z [INFO]: Controller: Requesting news from the news-accessor-service
+2024-11-20T17:21:06.972Z [INFO]: Service: Invoking news-accessor-service with category technology
+2024-11-20T17:21:07.989Z [ERROR]: Controller: Error fetching news - Service: Error fetching news - Failed with status 500
+2024-11-20T17:21:32.954Z [INFO]: News Manager Service is running on port 3011
+2024-11-20T17:21:36.327Z [INFO]: Controller: Requesting news from the news-accessor-service
+2024-11-20T17:21:36.327Z [INFO]: Service: Invoking news-accessor-service with category technology
+2024-11-20T17:21:37.367Z [ERROR]: Controller: Error fetching news - Service: Error fetching news - Failed with status 500
+2024-11-20T17:27:20.091Z [INFO]: News Manager Service is running on port 3011
+2024-11-20T17:27:23.595Z [INFO]: Controller: Requesting news from the news-accessor-service
+2024-11-20T17:27:23.596Z [INFO]: Service: Invoking news-accessor-service with category technology
+2024-11-20T17:27:25.180Z [INFO]: Controller: Successfully returned news to the client
