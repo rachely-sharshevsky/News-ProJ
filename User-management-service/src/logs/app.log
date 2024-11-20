@@ -1,0 +1,203 @@
+2024-11-16T23:37:28.734Z [INFO]: User Management Service running on port 3000
+2024-11-16T23:52:01.780Z [ERROR]: Error creating user via Accessor Service: getaddrinfo ENOTFOUND user-accessor-service
+2024-11-16T23:52:01.783Z [ERROR]: Error registering user: getaddrinfo ENOTFOUND user-accessor-service
+2024-11-17T01:05:14.661Z [INFO]: User Management Service running on port 3000
+2024-11-17T01:05:27.576Z [ERROR]: Error creating user via Accessor Service: getaddrinfo ENOTFOUND user-accessor-service
+2024-11-17T01:05:27.587Z [ERROR]: Error registering user: getaddrinfo ENOTFOUND user-accessor-service
+2024-11-17T03:39:50.937Z [INFO]: User Management Service running on port 3000
+2024-11-17T03:40:04.807Z [ERROR]: Error creating user via Accessor Service: getaddrinfo ENOTFOUND user-accessor-service
+2024-11-17T03:40:04.812Z [ERROR]: Error registering user: getaddrinfo ENOTFOUND user-accessor-service
+2024-11-17T03:40:15.562Z [ERROR]: Error creating user via Accessor Service: getaddrinfo ENOTFOUND user-accessor-service
+2024-11-17T03:40:15.570Z [ERROR]: Error registering user: getaddrinfo ENOTFOUND user-accessor-service
+2024-11-17T03:41:24.001Z [INFO]: User Management Service running on port 3000
+2024-11-17T03:41:32.289Z [ERROR]: Error creating user via Accessor Service: getaddrinfo ENOTFOUND user-accessor-service
+2024-11-17T03:41:32.293Z [ERROR]: Error registering user: getaddrinfo ENOTFOUND user-accessor-service
+2024-11-17T03:42:22.727Z [INFO]: User Management Service running on port 3000
+2024-11-17T03:42:29.930Z [ERROR]: Error creating user via Accessor Service: Request stream has been aborted
+2024-11-17T03:42:29.933Z [ERROR]: Error registering user: Request stream has been aborted
+2024-11-17T03:43:15.766Z [INFO]: User Management Service running on port 3000
+2024-11-17T03:43:26.223Z [ERROR]: Error creating user via Accessor Service: Request stream has been aborted
+2024-11-17T03:43:26.251Z [ERROR]: Error registering user: Request stream has been aborted
+2024-11-17T03:44:16.611Z [INFO]: User Management Service running on port 3000
+2024-11-17T03:44:24.383Z [ERROR]: Error creating user via Accessor Service: Request stream has been aborted
+2024-11-17T03:44:24.385Z [ERROR]: Error registering user: Request stream has been aborted
+2024-11-17T15:09:21.921Z [INFO]: User Management Service running on port 3000
+2024-11-17T15:09:34.469Z [ERROR]: Error updating preferences via Accessor Service: getaddrinfo ENOTFOUND user-accessor-service
+2024-11-17T15:09:34.469Z [ERROR]: Error updating preferences: getaddrinfo ENOTFOUND user-accessor-service
+2024-11-17T15:10:24.184Z [INFO]: User Management Service running on port 3000
+2024-11-17T15:10:28.956Z [ERROR]: Error updating preferences via Accessor Service: getaddrinfo ENOTFOUND user-accessor-service
+2024-11-17T15:10:28.956Z [ERROR]: Error updating preferences: getaddrinfo ENOTFOUND user-accessor-service
+2024-11-17T15:10:54.900Z [INFO]: User Management Service running on port 3000
+2024-11-17T15:10:58.618Z [ERROR]: Error updating preferences via Accessor Service: req is not defined
+2024-11-17T15:10:58.619Z [ERROR]: Error updating preferences: req is not defined
+2024-11-17T15:11:27.241Z [INFO]: User Management Service running on port 3000
+2024-11-17T15:11:31.651Z [ERROR]: Error updating preferences via Accessor Service: req is not defined
+2024-11-17T15:11:31.653Z [ERROR]: Error updating preferences: req is not defined
+2024-11-17T15:13:42.290Z [INFO]: User Management Service running on port 3000
+2024-11-17T15:13:47.264Z [ERROR]: Error updating preferences via Accessor Service: getaddrinfo ENOTFOUND user-accessor-service
+2024-11-17T15:13:47.264Z [ERROR]: Error updating preferences: getaddrinfo ENOTFOUND user-accessor-service
+2024-11-17T18:58:25.084Z [INFO]: User Management Service running on port 3000
+2024-11-17T18:59:30.152Z [ERROR]: Error publishing user creation: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2024-11-17T18:59:30.153Z [ERROR]: Error registering user: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2024-11-17T18:59:35.254Z [ERROR]: Error publishing user creation: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2024-11-17T18:59:35.255Z [ERROR]: Error registering user: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2024-11-17T19:00:28.398Z [INFO]: User Management Service running on port 3000
+2024-11-17T19:03:06.144Z [INFO]: User Management Service running on port 3000
+2024-11-17T19:04:03.916Z [INFO]: User Management Service running on port 3000
+2024-11-17T19:06:28.036Z [INFO]: User Management Service running on port 3000
+2024-11-17T20:29:56.948Z [INFO]: User Management Service running on port 3000
+2024-11-17T20:31:21.071Z [ERROR]: Error publishing user creation: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2024-11-17T20:31:21.074Z [ERROR]: Error registering user: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2024-11-17T20:39:57.485Z [INFO]: User Management Service running on port 3000
+2024-11-17T20:40:04.093Z [ERROR]: Error publishing user creation: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2024-11-17T20:40:04.094Z [ERROR]: Error registering user: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2024-11-17T20:40:43.405Z [INFO]: User Management Service running on port 3000
+2024-11-17T20:40:46.567Z [ERROR]: Error publishing user creation: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2024-11-17T20:40:46.568Z [ERROR]: Error registering user: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2024-11-17T20:41:22.642Z [INFO]: User Management Service running on port 3000
+2024-11-17T20:41:32.649Z [ERROR]: Error publishing user creation: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2024-11-17T20:41:32.650Z [ERROR]: Error registering user: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2024-11-17T20:42:40.996Z [INFO]: User Management Service running on port 3000
+2024-11-17T20:42:44.776Z [ERROR]: Error publishing user creation: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2024-11-17T20:42:44.777Z [ERROR]: Error registering user: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+2024-11-17T20:43:14.326Z [INFO]: User Management Service running on port 3000
+2024-11-17T20:43:16.968Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T20:43:17.044Z [INFO]: User creation request successfully published to topic 'user-creation'
+2024-11-17T20:43:17.048Z [INFO]: User registered successfully: undefined
+2024-11-17T20:44:08.991Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T20:44:09.095Z [INFO]: User creation request successfully published to topic 'user-creation'
+2024-11-17T20:44:09.096Z [INFO]: User registered successfully: undefined
+2024-11-17T20:46:13.387Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T20:46:13.457Z [INFO]: User creation request successfully published to topic 'user-creation'
+2024-11-17T20:46:13.459Z [INFO]: User registered successfully: undefined
+2024-11-17T20:50:21.325Z [INFO]: User Management Service running on port 3000
+2024-11-17T20:50:26.420Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T20:50:26.434Z [INFO]: User creation request successfully published to topic 'user-creation'
+2024-11-17T20:50:26.438Z [INFO]: User registered successfully: undefined
+2024-11-17T21:01:16.787Z [INFO]: User Management Service running on port 3000
+2024-11-17T21:01:21.133Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T21:01:21.151Z [INFO]: User creation request successfully published to topic 'user-creation'
+2024-11-17T21:01:21.151Z [INFO]: Invoking user-accessor-service to fetch the new user ID...
+2024-11-17T21:01:21.152Z [ERROR]: Error in createUser: daprClient.invoke is not a function
+2024-11-17T21:01:21.152Z [ERROR]: Error registering user: daprClient.invoke is not a function
+2024-11-17T21:05:21.275Z [INFO]: User Management Service running on port 3000
+2024-11-17T21:05:26.188Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T21:05:26.206Z [INFO]: User creation request successfully published to topic 'user-creation'
+2024-11-17T21:05:26.206Z [INFO]: Invoking user-accessor-service to fetch the new user ID...
+2024-11-17T21:05:26.206Z [ERROR]: Error in createUser: response is not defined
+2024-11-17T21:05:26.207Z [ERROR]: Error registering user: response is not defined
+2024-11-17T21:05:58.490Z [INFO]: User Management Service running on port 3000
+2024-11-17T21:06:01.675Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T21:06:01.695Z [INFO]: User creation request successfully published to topic 'user-creation'
+2024-11-17T21:06:01.696Z [INFO]: Invoking user-accessor-service to fetch the new user ID...
+2024-11-17T21:06:01.696Z [ERROR]: Error in createUser: daprClient.invoke is not a function
+2024-11-17T21:06:01.696Z [ERROR]: Error registering user: daprClient.invoke is not a function
+2024-11-17T21:07:38.697Z [INFO]: User Management Service running on port 3000
+2024-11-17T21:07:42.983Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T21:07:42.998Z [INFO]: User creation request successfully published to topic 'user-creation'
+2024-11-17T21:07:42.998Z [INFO]: Invoking user-accessor-service to fetch the new user ID...
+2024-11-17T21:07:43.081Z [ERROR]: Error in createUser: {"error":"Internal Server Error","error_msg":"{\"errorCode\":\"ERR_DIRECT_INVOKE\",\"message\":\"failed to invoke, id: user-accessor-service, err: Post \\\"http://127.0.0.1:3001/createUser\\\": dial tcp 127.0.0.1:3001: connectex: No connection could be made because the target machine actively refused it.\"}","status":500}
+2024-11-17T21:07:43.081Z [ERROR]: Error registering user: {"error":"Internal Server Error","error_msg":"{\"errorCode\":\"ERR_DIRECT_INVOKE\",\"message\":\"failed to invoke, id: user-accessor-service, err: Post \\\"http://127.0.0.1:3001/createUser\\\": dial tcp 127.0.0.1:3001: connectex: No connection could be made because the target machine actively refused it.\"}","status":500}
+2024-11-17T21:23:27.283Z [INFO]: User Management Service running on port 3000
+2024-11-17T21:23:33.291Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T21:23:33.323Z [INFO]: User creation request successfully published to topic 'user-creation'
+2024-11-17T21:23:33.323Z [INFO]: Invoking user-accessor-service to fetch the new user ID...
+2024-11-17T21:23:33.424Z [ERROR]: Error in createUser: {"error":"Internal Server Error","error_msg":"{\"errorCode\":\"ERR_DIRECT_INVOKE\",\"message\":\"failed to invoke, id: user-accessor-service, err: Post \\\"http://127.0.0.1:3001/createUser\\\": dial tcp 127.0.0.1:3001: connectex: No connection could be made because the target machine actively refused it.\"}","status":500}
+2024-11-17T21:23:33.425Z [ERROR]: Error registering user: {"error":"Internal Server Error","error_msg":"{\"errorCode\":\"ERR_DIRECT_INVOKE\",\"message\":\"failed to invoke, id: user-accessor-service, err: Post \\\"http://127.0.0.1:3001/createUser\\\": dial tcp 127.0.0.1:3001: connectex: No connection could be made because the target machine actively refused it.\"}","status":500}
+2024-11-17T21:28:19.732Z [INFO]: User Management Service running on port 3000
+2024-11-17T21:28:23.897Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T21:28:23.913Z [INFO]: User creation request successfully published to topic 'user-creation'
+2024-11-17T21:28:23.913Z [INFO]: Invoking user-accessor-service to fetch the new user ID...
+2024-11-17T21:28:23.994Z [ERROR]: Error in createUser: {"error":"Internal Server Error","error_msg":"{\"errorCode\":\"ERR_DIRECT_INVOKE\",\"message\":\"failed to invoke, id: user-accessor-service, err: Post \\\"http://127.0.0.1:3001/createUser\\\": dial tcp 127.0.0.1:3001: connectex: No connection could be made because the target machine actively refused it.\"}","status":500}
+2024-11-17T21:28:23.994Z [ERROR]: Error registering user: {"error":"Internal Server Error","error_msg":"{\"errorCode\":\"ERR_DIRECT_INVOKE\",\"message\":\"failed to invoke, id: user-accessor-service, err: Post \\\"http://127.0.0.1:3001/createUser\\\": dial tcp 127.0.0.1:3001: connectex: No connection could be made because the target machine actively refused it.\"}","status":500}
+2024-11-17T21:28:43.521Z [INFO]: User Management Service running on port 3000
+2024-11-17T21:28:50.030Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T21:28:50.056Z [INFO]: User creation request successfully published to topic 'user-creation'
+2024-11-17T21:28:50.060Z [INFO]: User registered successfully: undefined
+2024-11-17T21:32:52.615Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T21:32:52.624Z [INFO]: User creation request successfully published to topic 'user-creation'
+2024-11-17T21:32:52.626Z [INFO]: User registered successfully: undefined
+2024-11-17T21:33:45.981Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T21:33:45.987Z [INFO]: User creation request successfully published to topic 'user-creation'
+2024-11-17T21:33:45.989Z [INFO]: User registered successfully: undefined
+2024-11-17T21:33:47.444Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T21:33:47.450Z [INFO]: User creation request successfully published to topic 'user-creation'
+2024-11-17T21:33:47.452Z [INFO]: User registered successfully: undefined
+2024-11-17T21:37:28.941Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T21:37:28.943Z [INFO]: User creation request successfully published to topic 'user-creation'
+2024-11-17T21:37:28.944Z [INFO]: User registered successfully: undefined
+2024-11-17T21:39:08.468Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T21:39:08.470Z [INFO]: User creation request successfully published to topic 'user-creation'
+2024-11-17T21:39:08.470Z [INFO]: User registered successfully: undefined
+2024-11-17T21:41:27.336Z [INFO]: User Management Service running on port 3000
+2024-11-17T21:41:32.111Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T21:41:32.133Z [ERROR]: Error in createUser: Failed to publish to Pub/Sub: undefined
+2024-11-17T21:41:32.133Z [ERROR]: Error registering user: Failed to publish to Pub/Sub: undefined
+2024-11-17T21:48:29.899Z [INFO]: User Management Service running on port 3000
+2024-11-17T21:49:01.302Z [INFO]: User Management Service running on port 3000
+2024-11-17T22:01:44.850Z [INFO]: User Management Service running on port 3000
+2024-11-17T22:06:13.110Z [INFO]: User Management Service running on port 3000
+2024-11-17T22:08:02.050Z [INFO]: User Management Service running on port 3000
+2024-11-17T22:13:04.652Z [INFO]: User Management Service running on port 3000
+2024-11-17T22:13:14.328Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T22:13:14.344Z [ERROR]: Error in createUser: Failed to publish to Pub/Sub: undefined
+2024-11-17T22:13:14.345Z [ERROR]: Error registering user: Failed to publish to Pub/Sub: undefined
+2024-11-17T22:23:37.070Z [INFO]: User Management Service running on port 3000
+2024-11-17T22:28:40.897Z [INFO]: User Management Service running on port 3000
+2024-11-17T22:29:16.487Z [INFO]: User Management Service running on port 3000
+2024-11-17T22:31:41.321Z [INFO]: User Management Service running on port 3000
+2024-11-17T22:34:43.720Z [INFO]: User Management Service running on port 3000
+2024-11-17T22:35:17.173Z [INFO]: User Management Service running on port 3000
+2024-11-17T22:35:29.829Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-17T22:36:01.145Z [ERROR]: Error in createUser: Failed to publish to Pub/Sub: undefined
+2024-11-17T22:36:01.146Z [ERROR]: Error registering user: Failed to publish to Pub/Sub: undefined
+2024-11-17T22:36:29.415Z [INFO]: User Management Service running on port 3000
+2024-11-17T22:38:15.305Z [INFO]: User Management Service running on port 3000
+2024-11-17T22:39:03.680Z [INFO]: User Management Service running on port 3000
+2024-11-17T22:39:46.458Z [INFO]: User Management Service running on port 3000
+2024-11-17T22:45:11.883Z [INFO]: User Management Service running on port 3000
+2024-11-17T22:45:16.423Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
+2024-11-20T08:39:53.135Z [INFO]: User Management Service running on port 3000
+2024-11-20T08:59:19.479Z [INFO]: User Management Service running on port 3000
