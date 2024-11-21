@@ -106,3 +106,39 @@
 2024-11-21T09:35:24.065Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
 2024-11-21T09:35:25.843Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
 2024-11-21T09:35:25.844Z [INFO]: Controller: Email sent successfully
+2024-11-21T09:43:42.880Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T09:44:19.996Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T09:48:03.158Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T09:50:28.376Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T09:50:59.633Z [INFO]: Controller: Received request to send email
+2024-11-21T09:50:59.636Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
+2024-11-21T09:51:01.373Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
+2024-11-21T09:51:01.374Z [INFO]: Controller: Email sent successfully
+2024-11-21T09:54:03.502Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T09:55:35.429Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T09:56:27.539Z [INFO]: Controller: Received request to send email
+2024-11-21T09:56:27.541Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
+2024-11-21T09:56:29.093Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
+2024-11-21T09:56:29.094Z [INFO]: Controller: Email sent successfully
+2024-11-21T10:05:33.136Z [INFO]: Controller: Received request to send email
+2024-11-21T10:05:33.137Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
+2024-11-21T10:05:34.839Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
+2024-11-21T10:05:34.840Z [INFO]: Controller: Email sent successfully
+2024-11-21T10:06:06.289Z [INFO]: Controller: Received request to send email
+2024-11-21T10:06:06.290Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
+2024-11-21T10:06:07.957Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
+2024-11-21T10:06:07.958Z [INFO]: Controller: Email sent successfully
+2024-11-21T10:06:11.434Z [INFO]: Controller: Received request to send email
+2024-11-21T10:06:11.435Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
+2024-11-21T10:06:13.228Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
+2024-11-21T10:06:13.229Z [INFO]: Controller: Email sent successfully
+2024-11-21T10:07:07.078Z [INFO]: Controller: Received request to send email
+2024-11-21T10:07:07.078Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
+2024-11-21T10:07:08.480Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
+2024-11-21T10:07:08.481Z [INFO]: Controller: Email sent successfully
+2024-11-21T10:12:35.799Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T10:14:52.694Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T10:15:16.212Z [INFO]: Controller: Received request to send email
+2024-11-21T10:15:16.216Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
+2024-11-21T10:15:17.734Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
+2024-11-21T10:15:17.735Z [INFO]: Controller: Email sent successfully
