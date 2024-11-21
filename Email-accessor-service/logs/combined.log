@@ -1,0 +1,108 @@
+2024-11-20T23:08:56.073Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-20T23:15:44.613Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-20T23:16:52.237Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-20T23:18:19.917Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-20T23:19:01.560Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-20T23:19:13.661Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-20T23:19:49.988Z [INFO]: Controller: Received request to send email
+2024-11-20T23:19:49.989Z [ERROR]: Controller: Missing required fields: emailAddress or emailBody
+2024-11-20T23:20:09.494Z [INFO]: Controller: Received request to send email
+2024-11-20T23:20:09.495Z [INFO]: Service: Preparing to send email to recipient@example.com
+2024-11-20T23:20:10.640Z [ERROR]: Service: Failed to send email - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-38254910e82sm3253418f8f.57 - gsmtp
+2024-11-20T23:20:10.641Z [ERROR]: Controller: Error sending email - Service: Failed to send email - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials ffacd0b85a97d-38254910e82sm3253418f8f.57 - gsmtp
+2024-11-20T23:20:25.609Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-20T23:20:28.966Z [INFO]: Controller: Received request to send email
+2024-11-20T23:20:28.967Z [INFO]: Service: Preparing to send email to recipient@example.com
+2024-11-20T23:20:30.027Z [ERROR]: Service: Failed to send email - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-433b45d1aedsm33667855e9.1 - gsmtp
+2024-11-20T23:20:30.028Z [ERROR]: Controller: Error sending email - Service: Failed to send email - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-433b45d1aedsm33667855e9.1 - gsmtp
+2024-11-20T23:22:05.633Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-20T23:22:09.532Z [INFO]: Controller: Received request to send email
+2024-11-20T23:22:09.533Z [INFO]: Service: Preparing to send email to recipient@example.com
+2024-11-20T23:22:10.261Z [ERROR]: Service: Failed to send email - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-433b463ab1fsm33755335e9.29 - gsmtp
+2024-11-20T23:22:10.262Z [ERROR]: Controller: Error sending email - Service: Failed to send email - Invalid login: 535-5.7.8 Username and Password not accepted. For more information, go to
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 5b1f17b1804b1-433b463ab1fsm33755335e9.29 - gsmtp
+2024-11-20T23:26:07.851Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-20T23:26:11.044Z [INFO]: Controller: Received request to send email
+2024-11-20T23:26:11.046Z [INFO]: Service: Preparing to send email to recipient@example.com
+2024-11-20T23:26:17.037Z [INFO]: Service: Email sent successfully to recipient@example.com
+2024-11-20T23:26:17.038Z [INFO]: Controller: Email sent successfully
+2024-11-20T23:27:00.202Z [INFO]: Controller: Received request to send email
+2024-11-20T23:27:00.203Z [INFO]: Service: Preparing to send email to rsh61047@example.com
+2024-11-20T23:27:01.662Z [INFO]: Service: Email sent successfully to rsh61047@example.com
+2024-11-20T23:27:01.663Z [INFO]: Controller: Email sent successfully
+2024-11-20T23:27:25.977Z [INFO]: Controller: Received request to send email
+2024-11-20T23:27:25.978Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
+2024-11-20T23:27:27.908Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
+2024-11-20T23:27:27.909Z [INFO]: Controller: Email sent successfully
+2024-11-20T23:29:07.550Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-20T23:29:10.996Z [INFO]: Controller: Received request to send email
+2024-11-20T23:29:10.997Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
+2024-11-20T23:29:15.167Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
+2024-11-20T23:29:15.168Z [INFO]: Controller: Email sent successfully
+2024-11-20T23:31:41.079Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-20T23:33:29.120Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-20T23:33:37.590Z [INFO]: Controller: Received request to send email
+2024-11-20T23:33:37.591Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
+2024-11-20T23:33:40.679Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
+2024-11-20T23:33:40.680Z [INFO]: Controller: Email sent successfully
+2024-11-20T23:34:58.634Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-20T23:35:02.711Z [INFO]: Controller: Received request to send email
+2024-11-20T23:35:02.712Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
+2024-11-20T23:35:04.994Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
+2024-11-20T23:35:04.995Z [INFO]: Controller: Email sent successfully
+2024-11-20T23:35:08.802Z [INFO]: Controller: Received request to send email
+2024-11-20T23:35:08.802Z [ERROR]: Controller: Missing required fields: emailAddress or emailBody
+2024-11-20T23:35:26.258Z [INFO]: Controller: Received request to send email
+2024-11-20T23:35:26.258Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
+2024-11-20T23:35:29.631Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
+2024-11-20T23:35:29.632Z [INFO]: Controller: Email sent successfully
+2024-11-20T23:36:04.544Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-20T23:36:13.515Z [INFO]: Controller: Received request to send email
+2024-11-20T23:36:13.516Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
+2024-11-20T23:36:16.650Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
+2024-11-20T23:36:16.651Z [INFO]: Controller: Email sent successfully
+2024-11-21T00:08:46.526Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T00:10:03.617Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T00:13:07.940Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T00:14:59.666Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T00:16:23.920Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T00:17:55.064Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T00:19:25.374Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T00:20:31.366Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T00:20:56.038Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T00:21:29.564Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T00:21:47.379Z [INFO]: Controller: Received request to send email
+2024-11-21T00:21:47.381Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
+2024-11-21T00:21:50.754Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
+2024-11-21T00:21:50.754Z [INFO]: Controller: Email sent successfully
+2024-11-21T00:22:01.345Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T00:23:27.006Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T00:24:24.717Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T00:24:28.465Z [INFO]: Controller: Received request to send email
+2024-11-21T00:24:28.466Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
+2024-11-21T00:24:30.756Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
+2024-11-21T00:24:30.757Z [INFO]: Controller: Email sent successfully
+2024-11-21T00:26:00.115Z [INFO]: Controller: Received request to send email
+2024-11-21T00:26:00.116Z [ERROR]: Controller: Missing required fields: emailAddress or emailBody
+2024-11-21T00:27:52.713Z [INFO]: Controller: Received request to send email
+2024-11-21T00:27:52.713Z [ERROR]: Controller: Missing required fields: emailAddress or emailBody
+2024-11-21T00:28:33.135Z [INFO]: Controller: Received request to send email
+2024-11-21T00:28:33.136Z [ERROR]: Controller: Missing required fields: emailAddress or emailBody
+2024-11-21T00:29:10.015Z [INFO]: Controller: Received request to send email
+2024-11-21T00:29:10.015Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
+2024-11-21T00:29:12.885Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
+2024-11-21T00:29:12.886Z [INFO]: Controller: Email sent successfully
+2024-11-21T00:30:02.335Z [INFO]: Controller: Received request to send email
+2024-11-21T00:30:02.335Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
+2024-11-21T00:30:03.772Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
+2024-11-21T00:30:03.772Z [INFO]: Controller: Email sent successfully
+2024-11-21T09:35:17.537Z [INFO]: Email Accessor Service is running on port 3013
+2024-11-21T09:35:24.063Z [INFO]: Controller: Received request to send email
+2024-11-21T09:35:24.065Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
+2024-11-21T09:35:25.843Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
+2024-11-21T09:35:25.844Z [INFO]: Controller: Email sent successfully
