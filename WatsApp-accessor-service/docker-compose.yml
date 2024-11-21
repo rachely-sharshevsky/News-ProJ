@@ -1,0 +1,37 @@
+version: "3.9"
+services:
+  whatsapp-accessor-service:
+    build:
+      context: ./whatsapp-accessor-service
+    container_name: whatsapp-accessor-service
+    ports:
+      - "3014:3014"
+    environment:
+      - WHATSAPP_API_URL=https://api.whatsapp.com/send
+      - WHATSAPP_API_KEY=your_api_key_here
+    networks:
+      - network-dapr
+  whatsapp-accessor-service-dapr:
+    image: "daprio/daprd:1.14.4"
+    container_name: whatsapp-accessor-service-dapr
+    command: [
+      "./daprd",
+      "-app-port", "3014",
+      "-app-id", "whatsapp-accessor-service",
+      "-app-protocol", "http",
+      "-dapr-http-port", "3514",
+      "--resources-path", "/dapr/components",
+      "-config", "/dapr/config.yaml",
+      "--log-level", "debug"
+    ]
+    volumes:
+      - "./dapr/components:/dapr/components"
+      - "./dapr/config.yaml:/dapr/config.yaml"
+    depends_on:
+      - whatsapp-accessor-service
+    networks:
+      - network-dapr
+
+networks:
+  network-dapr:
+    driver: bridge
