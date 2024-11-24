@@ -5,7 +5,6 @@ class NewsAIController {
     static async summarizeNews(req, res) {
         try {
             const newsArray = req.body.results;
-            // const { data: newsArray } = ;
 
             if (!Array.isArray(newsArray)) {
                 throw new Error('data must be an array.');
@@ -15,7 +14,6 @@ class NewsAIController {
             logger.info('Received request to summarize all news articles.');
         
             
-            // העברת המערך בלבד לפונקציה
            
             const result = await NewsSummarizer.summarize(newsArray);
 

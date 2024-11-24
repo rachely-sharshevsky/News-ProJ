@@ -1,4 +1,5 @@
 // src/utils/validation.js
+const logger = require('../utils/logger');
 
 /**
  * Validates user data.

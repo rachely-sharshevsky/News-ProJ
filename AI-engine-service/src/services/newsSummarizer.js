@@ -13,14 +13,13 @@ class NewsSummarizer {
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
         try {
-            // מיזוג החדשות בפורמט מותאם
+           
             const formattedNews = newsArray.map(news => 
                 `Article ID: ${news.article_id}\nTitle: ${news.title}\nDescription: ${news.description}\nLink: ${news.link}\nSource: ${news.source_name}\nPublished Date: ${news.pubDate}\n\n`
             ).join("");
 
             logger.info("Formatted news content prepared for summarization.");
 
-            // שליחת הטקסט המאוחד ל-Gemini
             const result = await model.generateContent([
                 {
                     text: `Summarize the following news articles into one concise summary paragraph for each article:\n\n${formattedNews}`,

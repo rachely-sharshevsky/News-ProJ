@@ -3,11 +3,13 @@ const logger = require('../utils/logger');
 
 // Map service appIds to their Dapr HTTP ports
 const servicePorts = {
-    'user-manager-service': process.env.DAPR_HTTP_PORT_USER_MANAGER || 3501,
-    'news-manager-service': process.env.DAPR_HTTP_PORT_NEWS_MANAGER || 3507,
-    'message-manager-service': process.env.DAPR_HTTP_PORT_MESSAGE_MANAGER || 3511,
-    'email-accessor-service': process.env.DAPR_HTTP_PORT_EMAIL_ACCESSOR || 3513,
-    'whatsapp-accessor-service': process.env.DAPR_HTTP_PORT_WHATSAPP_ACCESSOR || 3514,
+    'user-manager-service': process.env.DAPR_HTTP_PORT_USER_MANAGER || 3503,
+    'news-manager-service': process.env.DAPR_HTTP_PORT_NEWS_MANAGER || 3511,
+    'massage-manager-service': process.env.DAPR_HTTP_PORT_MESSAGE_MANAGER || 3512,
+   'email-accessor-service': process.env.DAPR_HTTP_PORT_EMAIL_ACCESSOR || 3513,
+   'whatsapp-accessor-service': process.env.DAPR_HTTP_PORT_WHATSAPP_ACCESSOR || 3514,
+    "ai-engine-service": process.env.DAPR_HTTP_PORT_AI_ENGINE_SERVICE || 3522
+    
 };
 /**
  * Helper function to invoke Dapr services.

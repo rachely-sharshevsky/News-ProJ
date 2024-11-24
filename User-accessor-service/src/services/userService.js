@@ -32,6 +32,7 @@ const userService = {
     // Update user preferences
     async updatePreferences(userId, preferences) {
         try {
+            console.log("updatePreferences", userId, preferences);
             logger.info(`Service: Updating preferences for user ${userId}`);
             return await User.findByIdAndUpdate(userId, { preferences }, { new: true });
         } catch (error) {

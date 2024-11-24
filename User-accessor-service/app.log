@@ -13310,3 +13310,71 @@
 2024-11-21T19:01:04.220Z [INFO]: Service: Fetching user with ID: 673f7fe7bc902d1bcfbbdaaf
 2024-11-21T19:01:04.364Z [ERROR]: Controller: Error fetching user: Cannot read properties of undefined (reading 'status')
 2024-11-21T19:01:04.365Z [ERROR]: Error fetching user: Cannot read properties of undefined (reading 'status')
+2024-11-24T12:44:53.075Z [INFO]: User Accessor Service running on port 3001
+2024-11-24T12:44:55.538Z [INFO]: Connected to MongoDB successfully
+2024-11-24T13:51:01.365Z [INFO]: User Accessor Service running on port 3001
+2024-11-24T13:51:03.485Z [INFO]: Connected to MongoDB successfully
+2024-11-24T13:54:03.599Z [INFO]: Received request to create a new user
+2024-11-24T13:54:03.600Z [INFO]: Controller: Creating user with data: {"name":"Jane Doe","email":"jane.doe@example.com","preferences":["technology","sports"],"communicationChannel":"email"}
+2024-11-24T13:54:03.601Z [INFO]: Service: Creating user with data: {"name":"Jane Doe","email":"jane.doe@example.com","preferences":["technology","sports"],"communicationChannel":"email"}
+2024-11-24T13:54:03.850Z [INFO]: Controller: User created successfully with ID: 67432ffb6608a466c172102c
+2024-11-24T14:02:18.553Z [INFO]: Received request to update preferences for user ID: 67432ffb6608a466c172102c
+2024-11-24T14:02:18.553Z [INFO]: Controller: Updating preferences for user 67432ffb6608a466c172102c
+2024-11-24T14:02:18.553Z [INFO]: Service: Updating preferences for user 67432ffb6608a466c172102c
+2024-11-24T14:02:18.745Z [ERROR]: Controller: Error updating preferences: Cannot read properties of undefined (reading 'json')
+2024-11-24T14:02:18.746Z [ERROR]: Error updating preferences: Cannot read properties of undefined (reading 'status')
+2024-11-24T14:03:03.532Z [INFO]: Received request to update preferences for user ID: 67432ffb6608a466c172102c
+2024-11-24T14:03:03.533Z [INFO]: Controller: Updating preferences for user 67432ffb6608a466c172102c
+2024-11-24T14:03:03.533Z [INFO]: Service: Updating preferences for user 67432ffb6608a466c172102c
+2024-11-24T14:03:03.793Z [ERROR]: Controller: Error updating preferences: Cannot read properties of undefined (reading 'json')
+2024-11-24T14:03:03.794Z [ERROR]: Error updating preferences: Cannot read properties of undefined (reading 'status')
+2024-11-24T14:03:47.306Z [INFO]: User Accessor Service running on port 3001
+2024-11-24T14:03:49.294Z [INFO]: Connected to MongoDB successfully
+2024-11-24T14:03:50.432Z [INFO]: Received request to update preferences for user ID: 67432ffb6608a466c172102c
+2024-11-24T14:03:50.433Z [INFO]: Controller: Updating preferences for user 67432ffb6608a466c172102c
+2024-11-24T14:03:50.435Z [INFO]: Service: Updating preferences for user 67432ffb6608a466c172102c
+2024-11-24T14:03:50.626Z [ERROR]: Controller: Error updating preferences: Cannot read properties of undefined (reading 'json')
+2024-11-24T14:03:50.627Z [ERROR]: Error updating preferences: Cannot read properties of undefined (reading 'status')
+2024-11-24T14:04:33.294Z [INFO]: Received request to update preferences for user ID: 67432ffb6608a466c172102c
+2024-11-24T14:04:33.295Z [INFO]: Controller: Updating preferences for user 67432ffb6608a466c172102c
+2024-11-24T14:04:33.296Z [INFO]: Service: Updating preferences for user 67432ffb6608a466c172102c
+2024-11-24T14:04:33.476Z [ERROR]: Controller: Error updating preferences: Cannot read properties of undefined (reading 'json')
+2024-11-24T14:04:33.476Z [ERROR]: Error updating preferences: Cannot read properties of undefined (reading 'status')
+2024-11-24T14:04:59.936Z [INFO]: User Accessor Service running on port 3001
+2024-11-24T14:05:01.883Z [INFO]: Connected to MongoDB successfully
+2024-11-24T14:05:03.401Z [INFO]: Received request to update preferences for user ID: 67432ffb6608a466c172102c
+2024-11-24T14:05:03.401Z [INFO]: Controller: Updating preferences for user 67432ffb6608a466c172102c
+2024-11-24T14:05:03.402Z [INFO]: Service: Updating preferences for user 67432ffb6608a466c172102c
+2024-11-24T14:05:03.757Z [ERROR]: Controller: Error updating preferences: Cannot read properties of undefined (reading 'json')
+2024-11-24T14:05:03.757Z [ERROR]: Error updating preferences: Cannot read properties of undefined (reading 'status')
+2024-11-24T14:05:28.552Z [INFO]: User Accessor Service running on port 3001
+2024-11-24T14:05:30.380Z [INFO]: Connected to MongoDB successfully
+2024-11-24T14:05:31.864Z [INFO]: Received request to update preferences for user ID: 67432ffb6608a466c172102c
+2024-11-24T14:05:31.865Z [INFO]: Controller: Updating preferences for user 67432ffb6608a466c172102c
+2024-11-24T14:05:31.869Z [INFO]: Service: Updating preferences for user 67432ffb6608a466c172102c
+2024-11-24T14:05:32.065Z [ERROR]: Controller: Error updating preferences: Cannot read properties of undefined (reading 'json')
+2024-11-24T14:05:32.067Z [ERROR]: Error updating preferences: Cannot read properties of undefined (reading 'status')
+2024-11-24T14:10:29.127Z [INFO]: User Accessor Service running on port 3001
+2024-11-24T14:10:32.763Z [INFO]: Received request to update preferences for user ID: 67432ffb6608a466c172102c
+2024-11-24T14:10:32.764Z [INFO]: Controller: Updating preferences for user 67432ffb6608a466c172102c
+2024-11-24T14:10:32.767Z [INFO]: Service: Updating preferences for user 67432ffb6608a466c172102c
+2024-11-24T14:10:33.547Z [INFO]: Connected to MongoDB successfully
+2024-11-24T14:10:34.642Z [INFO]: User preferences updated successfully for user 67432ffb6608a466c172102c
+2024-11-24T14:10:34.643Z [ERROR]: Controller: Error updating preferences: Cannot read properties of undefined (reading 'status')
+2024-11-24T14:10:34.644Z [ERROR]: Error updating preferences: Cannot read properties of undefined (reading 'status')
+2024-11-24T14:14:38.970Z [INFO]: Received request to create a new user
+2024-11-24T14:14:38.971Z [INFO]: Controller: Creating user with data: {"name":"Jane Doe","email":"jane.doe@example.com","preferences":["technology","sports"],"communicationChannel":"email"}
+2024-11-24T14:14:38.972Z [INFO]: Service: Creating user with data: {"name":"Jane Doe","email":"jane.doe@example.com","preferences":["technology","sports"],"communicationChannel":"email"}
+2024-11-24T14:14:39.176Z [ERROR]: Service: Error creating user: E11000 duplicate key error collection: personalizedNews.users index: email_1 dup key: { email: "jane.doe@example.com" }
+2024-11-24T14:14:39.178Z [ERROR]: Controller: Error creating user: E11000 duplicate key error collection: personalizedNews.users index: email_1 dup key: { email: "jane.doe@example.com" }
+2024-11-24T14:15:07.569Z [INFO]: Received request to create a new user
+2024-11-24T14:15:07.570Z [INFO]: Controller: Creating user with data: {"name":"Jane Doe","email":"janeדשד@example.com","preferences":["technology","sports"],"communicationChannel":"email"}
+2024-11-24T14:15:07.570Z [INFO]: Service: Creating user with data: {"name":"Jane Doe","email":"janeדשד@example.com","preferences":["technology","sports"],"communicationChannel":"email"}
+2024-11-24T14:15:07.750Z [INFO]: Controller: User created successfully with ID: 674334ebfa2bd244d36d3ccd
+2024-11-24T14:18:48.404Z [INFO]: User Accessor Service running on port 3001
+2024-11-24T14:18:50.623Z [INFO]: Connected to MongoDB successfully
+2024-11-24T14:24:14.054Z [INFO]: Received request to create a new user
+2024-11-24T14:24:14.055Z [INFO]: Controller: Creating user with data: {"name":"John Doe","email":"דגגדג@example.com","preferences":["Tech","News"],"communicationChannel":"email"}
+2024-11-24T14:24:14.056Z [INFO]: Service: Creating user with data: {"name":"John Doe","email":"דגגדג@example.com","preferences":["Tech","News"],"communicationChannel":"email"}
+2024-11-24T14:24:14.270Z [ERROR]: Service: Error creating user: E11000 duplicate key error collection: personalizedNews.users index: email_1 dup key: { email: "דגגדג@example.com" }
+2024-11-24T14:24:14.271Z [ERROR]: Controller: Error creating user: E11000 duplicate key error collection: personalizedNews.users index: email_1 dup key: { email: "דגגדג@example.com" }

@@ -106,3 +106,4 @@
 2024-11-21T09:35:24.065Z [INFO]: Service: Preparing to send email to rsh61047@gmail.com
 2024-11-21T09:35:25.843Z [INFO]: Service: Email sent successfully to rsh61047@gmail.com
 2024-11-21T09:35:25.844Z [INFO]: Controller: Email sent successfully
+2024-11-24T13:49:08.927Z [INFO]: Email Accessor Service is running on port 3013

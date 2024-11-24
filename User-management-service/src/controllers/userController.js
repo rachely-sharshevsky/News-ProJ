@@ -25,25 +25,26 @@ exports.registerUser = async (req, res) => {
 // Get a user by ID
 exports.getUserById = async (req, res) => {
     try {
+        logger.info('Controller: Fetching user by ID');
         const userId = req.params.id;
 
-        // Fetch user by ID using the service layer
+        if (!userId) {
+            return res.status(400).json({ error: 'User ID is required' });
+        }
+
+        // Fetch user data from the service layer
         const user = await userService.getUserById(userId);
-        
-        if (!user) {
-            logger.warn(`User with ID ${userId} not found.`);
-            return res.status(404).json({ error: 'User not found' });
-        }
 
-        logger.info(`Fetched user with ID: ${user._id}`);
-        res.status(200).json(user);
+        // Send the user details in the response
+        res.status(200).json({
+            id: user._id,
+            name: user.name,
+            email: user.email,
+            communicationChannel: user.communicationChannel, // Add communication channel
+            preferences: user.preferences,
+        });
     } catch (error) {
-        if (error.name === 'CastError') {
-            logger.warn('Invalid user ID format');
-            return res.status(400).json({ error: 'Invalid user ID format' });
-        }
-
-        logger.error(`Error fetching user: ${error.message}`);
+        logger.error(`Controller: Error fetching user - ${error.message}`);
         res.status(500).json({ error: 'Failed to fetch user' });
     }
 };

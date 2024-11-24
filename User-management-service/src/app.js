@@ -1,19 +1,20 @@
 const express = require('express');
 const dotenv = require('dotenv');
+const userRoutes = require('./routes/userRouter');
 const logger = require('./utils/logger');
-const router = require('./routes/newsRouter');
 
-// Load environment variables
+// טעינת משתני סביבה
 dotenv.config();
 
+// יצירת אפליקציה
 const app = express();
 app.use(express.json());
 
-// Define the main route for the service
-app.use('/news', router);
+// רישום רוטים
+app.use('/users', userRoutes);
 
-// Start the server
-const PORT = process.env.PORT || 3011;
+// התחלת השרת
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    logger.info(`News Manager Service is running on port ${PORT}`);
+    logger.info(`User Management Service running on port ${PORT}`);
 });

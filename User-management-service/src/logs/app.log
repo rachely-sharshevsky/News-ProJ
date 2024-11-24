@@ -200,4 +200,68 @@
 2024-11-17T22:45:11.883Z [INFO]: User Management Service running on port 3000
 2024-11-17T22:45:16.423Z [INFO]: Publishing user creation to Pub/Sub: [object Object]
 2024-11-20T08:39:53.135Z [INFO]: User Management Service running on port 3000
-2024-11-20T08:59:19.479Z [INFO]: User Management Service running on port 3000
+2024-11-21T12:59:08.506Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:03:22.435Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:07:41.659Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:17:50.416Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:18:40.803Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:19:04.770Z [ERROR]: Error registering user: logger is not defined
+2024-11-21T13:19:56.926Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:21:40.009Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:27:44.019Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:30:40.957Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:31:48.063Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:33:06.152Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:33:36.316Z [ERROR]: Error registering user: logger is not defined
+2024-11-21T13:34:50.173Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:34:51.117Z [INFO]: Validation: Validating user data
+2024-11-21T13:34:51.118Z [ERROR]: Error registering user: Name is required and must be a non-empty string.
+2024-11-21T13:35:29.224Z [INFO]: Validation: Validating user data
+2024-11-21T13:35:29.225Z [ERROR]: Error registering user: Communication Channel is required and must be a string.
+2024-11-21T13:35:37.799Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:35:40.349Z [INFO]: Validation: Validating user data
+2024-11-21T13:35:40.349Z [ERROR]: Error registering user: Communication Channel is required and must be a string.
+2024-11-21T13:38:25.010Z [INFO]: Validation: Validating user data
+2024-11-21T13:38:25.010Z [INFO]: Service: Creating a new user...
+2024-11-21T13:38:25.140Z [INFO]: Service: User creation request published to 'user-creation' topic.
+2024-11-21T13:38:25.141Z [INFO]: Service: Invoking Accessor service to save user...
+2024-11-21T13:38:26.157Z [ERROR]: Service: Error creating user - {"error":"Internal Server Error","error_msg":"{\"errorCode\":\"ERR_DIRECT_INVOKE\",\"message\":\"failed to invoke, id: User-accessor-service, err: couldn't find service: User-accessor-service\"}","status":500}
+2024-11-21T13:38:26.157Z [ERROR]: Error registering user: {"error":"Internal Server Error","error_msg":"{\"errorCode\":\"ERR_DIRECT_INVOKE\",\"message\":\"failed to invoke, id: User-accessor-service, err: couldn't find service: User-accessor-service\"}","status":500}
+2024-11-21T13:38:39.296Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:38:41.453Z [INFO]: Validation: Validating user data
+2024-11-21T13:38:41.453Z [INFO]: Service: Creating a new user...
+2024-11-21T13:38:41.469Z [INFO]: Service: User creation request published to 'user-creation' topic.
+2024-11-21T13:38:41.469Z [INFO]: Service: Invoking Accessor service to save user...
+2024-11-21T13:38:42.480Z [ERROR]: Service: Error creating user - {"error":"Internal Server Error","error_msg":"{\"errorCode\":\"ERR_DIRECT_INVOKE\",\"message\":\"failed to invoke, id: User-accessor-service, err: couldn't find service: User-accessor-service\"}","status":500}
+2024-11-21T13:38:42.480Z [ERROR]: Error registering user: {"error":"Internal Server Error","error_msg":"{\"errorCode\":\"ERR_DIRECT_INVOKE\",\"message\":\"failed to invoke, id: User-accessor-service, err: couldn't find service: User-accessor-service\"}","status":500}
+2024-11-21T13:39:14.231Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:39:18.532Z [INFO]: Validation: Validating user data
+2024-11-21T13:39:18.532Z [INFO]: Service: Creating a new user...
+2024-11-21T13:39:18.548Z [INFO]: Service: User creation request published to 'user-creation' topic.
+2024-11-21T13:39:18.548Z [INFO]: Service: Invoking Accessor service to save user...
+2024-11-21T13:39:19.558Z [ERROR]: Service: Error creating user - {"error":"Internal Server Error","error_msg":"{\"errorCode\":\"ERR_DIRECT_INVOKE\",\"message\":\"failed to invoke, id: User-accessor-service, err: couldn't find service: User-accessor-service\"}","status":500}
+2024-11-21T13:39:19.559Z [ERROR]: Error registering user: {"error":"Internal Server Error","error_msg":"{\"errorCode\":\"ERR_DIRECT_INVOKE\",\"message\":\"failed to invoke, id: User-accessor-service, err: couldn't find service: User-accessor-service\"}","status":500}
+2024-11-21T13:42:03.727Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:49:26.546Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:50:38.839Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:51:00.715Z [INFO]: Validation: Validating user data
+2024-11-21T13:51:00.716Z [INFO]: Service: Creating a new user...
+2024-11-21T13:51:00.740Z [INFO]: Service: User creation request published to 'user-creation' topic.
+2024-11-21T13:51:00.741Z [INFO]: Service: Invoking Accessor service to save user...
+2024-11-21T13:51:01.755Z [ERROR]: Service: Error creating user - {"error":"Internal Server Error","error_msg":"{\"errorCode\":\"ERR_DIRECT_INVOKE\",\"message\":\"failed to invoke, id: User-accessor-service, err: couldn't find service: User-accessor-service\"}","status":500}
+2024-11-21T13:51:01.755Z [ERROR]: Error registering user: {"error":"Internal Server Error","error_msg":"{\"errorCode\":\"ERR_DIRECT_INVOKE\",\"message\":\"failed to invoke, id: User-accessor-service, err: couldn't find service: User-accessor-service\"}","status":500}
+2024-11-21T13:51:42.906Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:51:47.025Z [INFO]: Validation: Validating user data
+2024-11-21T13:51:47.025Z [INFO]: Service: Creating a new user...
+2024-11-21T13:52:18.324Z [INFO]: Service: User creation request published to 'user-creation' topic.
+2024-11-21T13:52:18.325Z [INFO]: Service: Invoking Accessor service to save user...
+2024-11-21T13:52:49.572Z [ERROR]: Service: Error creating user - DAPR_SIDECAR_COULD_NOT_BE_STARTED
+2024-11-21T13:52:49.573Z [ERROR]: Error registering user: DAPR_SIDECAR_COULD_NOT_BE_STARTED
+2024-11-21T13:55:32.412Z [INFO]: User Management Service running on port 3000
+2024-11-21T13:55:34.886Z [INFO]: Validation: Validating user data
+2024-11-21T13:55:34.887Z [INFO]: Service: Creating a new user...
+2024-11-21T13:56:06.085Z [INFO]: Service: User creation request published to 'user-creation' topic.
+2024-11-21T13:56:06.085Z [INFO]: Service: Invoking Accessor service to save user...
+2024-11-21T13:56:37.222Z [ERROR]: Service: Error creating user - DAPR_SIDECAR_COULD_NOT_BE_STARTED
+2024-11-21T13:56:37.223Z [ERROR]: Error registering user: DAPR_SIDECAR_COULD_NOT_BE_STARTED
+2024-11-24T16:40:27.417Z [INFO]: User Management Service running on port 3000

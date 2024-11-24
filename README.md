@@ -1,1 +1,2 @@
-# News-ProJ
+# NewsProj
+Personalized News Update Aggregator

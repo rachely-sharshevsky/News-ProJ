@@ -4,7 +4,7 @@ const { validateUser } = require('../utils/validation');
 
 // Dapr configuration
 const daprHost = "127.0.0.1"; // Local sidecar address
-const daprPort = "3501";      // Sidecar HTTP port
+const daprPort = "3502";      // Sidecar HTTP port
 const daprClient = new DaprClient(daprHost, daprPort);
 
 class UserService {
@@ -12,7 +12,6 @@ class UserService {
     async createUser(userData) {
         try {
             logger.info('Service: Creating a new user...');
-            
             // Publish to Pub/Sub topic
             await daprClient.pubsub.publish("messagebus", "user-creation", userData);
             logger.info("Service: User creation request published to 'user-creation' topic.");
@@ -38,14 +37,18 @@ class UserService {
     async getUserById(userId) {
         try {
             logger.info(`Service: Fetching user with ID: ${userId}`);
-
+    
             // Invoke Accessor service to get user details
             const response = await daprClient.invoker.invoke(
                 "User-accessor-service",
                 `users/${userId}`,
                 "GET"
             );
-
+    
+            if (!response.email) {
+                throw new Error(`Service: Email not found for user ID: ${userId}`);
+            }
+    
             logger.info(`Service: Successfully fetched user: ${response._id}`);
             return response;
         } catch (error) {
@@ -55,6 +58,7 @@ class UserService {
     }
 
     // Update user preferences
+    
     async updateUserPreferences(userId, preferences) {
         try {
             logger.info(`Service: Updating preferences for user ID: ${userId} with preferences: ${preferences}`);

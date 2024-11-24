@@ -1,17 +1,25 @@
-const winston = require('winston');
+const fs = require('fs');
+const path = require('path');
+const { createLogger, format, transports } = require('winston');
 
-// Configure logging using winston
-const logger = winston.createLogger({
-    level: 'info',
-    format: winston.format.combine(
-        winston.format.timestamp(),
-        winston.format.printf(({ level, message, timestamp }) => {
-            return `${timestamp} [${level.toUpperCase()}]: ${message}`;
-        })
+// Define log directory
+const logDir = path.join(__dirname, '..', 'logs');
+if (!fs.existsSync(logDir)) {
+    fs.mkdirSync(logDir);
+}
+
+// Create a Winston logger instance
+const logger = createLogger({
+    level: 'info', // Default log level
+    format: format.combine(
+        format.timestamp(),
+        format.printf(({ timestamp, level, message }) => `${timestamp} [${level.toUpperCase()}]: ${message}`)
     ),
     transports: [
-        new winston.transports.Console(),
-        new winston.transports.File({ filename: 'logs/app.log' }),
+        // Log to the console
+        new transports.Console(),
+        // Log to a file
+        new transports.File({ filename: path.join(logDir, 'app.log') }),
     ],
 });
 

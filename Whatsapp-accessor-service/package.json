@@ -1,5 +1,5 @@
 {
-    "name": "user-management-service",
+    "name": "whatsApp-accessor-service",
     "version": "1.0.0",
     "description": "Service for accessing user data",
     "main": "app.js",

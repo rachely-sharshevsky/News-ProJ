@@ -2,7 +2,7 @@
 FROM node:16
 
 # Set working directory inside the container
-WORKDIR /app
+WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json for dependency installation
 COPY package*.json ./
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3015
 
 # Default command to run the application
-CMD ["npm", "start"]
+CMD ["node", "src/app.js"]

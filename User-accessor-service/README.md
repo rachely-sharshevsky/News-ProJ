@@ -1,112 +1,79 @@
-User Accessor Service
-The User Accessor Service is responsible for managing the storage and retrieval of user data, including user authentication credentials, preferences, and profile details. This service directly interacts with the database and provides APIs to access or modify user data.
+# User-Accessor Service
 
-Features
-Secure storage of user credentials with hashed passwords.
-CRUD operations for managing user data.
-Management of user preferences and categories.
-Easy integration with other microservices.
+## Overview
+The **User-Accessor Service** handles user data management, including user creation, preferences management, and database interactions. This service communicates with other services via Dapr and uses MongoDB for data persistence.
 
+## Features
+- User creation and management.
+- Preferences update functionality.
+- Integration with Dapr for inter-service communication.
+- MongoDB integration for data storage.
 
-Technologies Used
-Node.js (JavaScript runtime)
-Express.js (Web framework)
-MongoDB (Database for user data storage)
-Sequelize (ORM for database management)
-Dapr (Inter-service communication)
+## Technologies
+- **Node.js**: Runtime environment.
+- **Express.js**: Web framework.
+- **MongoDB**: Database.
+- **Dapr**: Distributed application runtime.
+- **Docker**: Containerization.
 
-Prerequisites
-Ensure the following are installed and available:
+## Prerequisites
+- **Node.js**: v16 or higher.
+- **MongoDB**: Running instance or container.
+- **Docker & Docker Compose**: Installed locally.
+- **Dapr CLI**: For debugging and local development.
 
-Node.js (version 18 or higher)
-MongoDB (for database storage)
-Docker and Docker Compose (for containerization)
-Dapr CLI (if using Dapr)
+## Environment Variables
+The service requires the following environment variables:
+- `DB_URL`: MongoDB connection string.
+- `DAPR_HTTP_PORT`: Port for Dapr HTTP communication.
 
-Installation
-git clone https://github.com/your-repo/user-accessor-service.git
-cd user-accessor-service
+Example `.env` file:
+
+DB_URL=mongodb://mongo:27017/users DAPR_HTTP_PORT=3502
+
+## Endpoints
+### 1. **Create User**
+- **Method**: POST
+- **URL**: `/users`
+- **Description**: Creates a new user.
+- **Request Body**:
+  ```json
+  {
+    "email": "user@example.com",
+    "password": "password123",
+    "fullName": "John Doe",
+    "preferences": ["technology", "science"]
+  }
+Response:
+{
+  "message": "User created successfully",
+  "userId": "1234567890abcdef"
+}
+pdate Preferences
+Method: PATCH
+URL: /users/:userId/preferences
+Description: Updates user preferences.
+{
+  "preferences": ["health", "sports"]
+}
+Response:{
+  "message": "Preferences updated successfully"
+}
+Setip and Running Localy
+git clone user-accessor-service
+cd User-accessor-service
+Install dependencies:
 npm install
+Start the service (without Docker):
+node src/app.js
+Start with Docker:docker-compose up --build
+Verify the service:
 
-Environment Variables
+Visit http://localhost:3001 or test via Postman.
+Docker Details
+Dockerfile:
+The service includes a Dockerfile for building the container.
+Docker Compose:
+The service integrates with other services using docker-compose.yaml
 
-PORT=4000
-MONGO_URI=mongodb://localhost:27017/user_management
-JWT_SECRET=your_jwt_secret
-DAPR_HTTP_PORT=3500
-DAPR_GRPC_PORT=50001
-API Documentation
-Base URL
-The default base URL for the service is http://localhost:4000.
 
-Endpoints
-1. Create User
-POST /api/users
-Request Body:
-json
-Copy code
-
-{
-  "email": "user@example.com",
-  "password": "securepassword",
-  "fullName": "John Doe",
-  "preferences": ["technology", "science"],
-  "categories": ["news", "articles"]
-}
-Response
-
-{
-  "message": "User created successfully!",
-  "userId": "unique_user_id"
-}
-2. Get User by ID
-GET /api/users/:userId
-Response
-{
-  "email": "user@example.com",
-  "fullName": "John Doe",
-  "preferences": ["technology", "science"],
-  "categories": ["news", "articles"]
-}
-3. Update User
-PUT /api/users/:userId
-Request Body:
-json
-Copy code
-{
-  "preferences": ["technology", "health"],
-  "categories": ["blogs", "news"]
-}
-{
-  "message": "User updated successfully!"
-}
-Running the Service
-Locally
-Start MongoDB:
-
-bash
-Copy code
-mongod
-
-Run the container:
-docker run -p 4000:4000 --env-file .env user-accessor-service
-Alternatively, use Docker Compose:
-docker-compose up
-
-Project Structure
-user-accessor-service/
-├── src/
-│   ├── controllers/       # Handles API logic
-│   ├── models/            # Database models
-│   ├── routes/            # API routes
-│   ├── services/          # Business logic
-│   └── app.js             # Main application file
-├── test/                  # Test files
-├── .env.example           # Example environment variables
-├── Dockerfile             # Docker configuration
-├── docker-compose.yml     # Docker Compose configuration
-├── package.json           # Node.js dependencies
-└── README.md              # Documentation
-
-Contributing
-Contributions are welcome! Please open an issue or submit a pull request for significant change

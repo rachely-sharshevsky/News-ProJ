@@ -42,13 +42,25 @@ const userController = {
         try {
             const userId = req.params.id;
             const preferences = req.body.preferences;
+    
+            // Validate preferences
+            if (!Array.isArray(preferences)) {
+                logger.warn('Preferences must be an array.');
+                return res.status(400).json({ error: 'Preferences must be an array' });
+            }
+    
             logger.info(`Controller: Updating preferences for user ${userId}`);
+    
+            // Call the service to update preferences
             const updatedUser = await userService.updatePreferences(userId, preferences);
+    
             if (!updatedUser) {
-                logger.warn(`Controller: User with ID ${userId} not found.`);
+                logger.warn(`User with ID ${userId} not found.`);
                 return res.status(404).json({ error: 'User not found' });
             }
-            res.json(updatedUser);
+    
+            logger.info(`User preferences updated successfully for user ${userId}`);
+            res.status(200).json(updatedUser);
         } catch (error) {
             logger.error(`Controller: Error updating preferences: ${error.message}`);
             res.status(500).json({ error: 'Failed to update preferences' });

@@ -1,0 +1,325 @@
+version: "3.8"
+
+services:
+  redis:
+    image: redis:alpine
+    container_name: redis
+    ports:
+      - "6380:6379"
+    networks:
+      - network-dapr
+    environment:
+      - REDIS_PASSWORD=your_secure_password
+
+  placement:
+    image: "daprio/dapr:1.14.4"
+    container_name: placement
+    command: ["./placement", "-port", "6052", "-log-level", "info"]
+    ports:
+      - "6052:6052"
+      - "6061:6061"
+    networks:
+      - network-dapr
+
+  user-accessor-service:
+    build:
+      context: ./User-accessor-service
+    container_name: user-accessor-service
+    ports:
+      - "3001:3001"
+    environment:
+      - DB_URL=mongodb://mongo:27017/users
+      - DAPR_HTTP_PORT=3502
+    restart: on-failure
+    env_file:
+      - ./User-accessor-service/.env
+    networks:
+      - network-dapr
+
+  user-accessor-service-dapr:
+    image: "daprio/daprd:1.14.4"
+    container_name: user-accessor-service-dapr
+    command: [
+      "./daprd",
+      "-app-port", "3001",
+      "-app-id", "user-accessor-service",
+      "-app-protocol", "http",
+      "-dapr-http-port", "3502",
+      "--resources-path", "/dapr/components",
+      "-config", "/dapr/config.yaml",
+      "--log-level", "debug"
+    ]
+    volumes:
+      - "./dapr/components:/dapr/components"
+      - "./dapr/config.yaml:/dapr/config.yaml"
+    depends_on:
+      - redis
+    networks:
+      - network-dapr
+
+  user-manager-service:
+    build:
+      context: ./User-manager-service
+    container_name: user-manager-service
+    ports:
+      - "3000:3000"
+    environment:
+      - DAPR_HTTP_PORT=3503
+      - REDIS_HOST=redis:6379
+      - REDIS_PASSWORD=your_secure_password
+    restart: on-failure
+    env_file:
+      - ./User-manager-service/.env
+    networks:
+      - network-dapr
+
+  user-manager-service-dapr:
+    image: "daprio/daprd:1.14.4"
+    container_name: user-manager-service-dapr
+    command: [
+      "./daprd",
+      "-app-port", "3016",
+      "-app-id", "user-manager-service",
+      "-app-protocol", "http",
+      "-dapr-http-port", "3503",
+      "--resources-path", "/dapr/components",
+      "-config", "/dapr/config.yaml",
+      "--log-level", "debug"
+    ]
+    volumes:
+      - "./dapr/components:/dapr/components"
+      - "./dapr/config.yaml:/dapr/config.yaml"
+    depends_on:
+      - redis
+    networks:
+      - network-dapr
+
+  news-accessor-service:
+    build:
+      context: ./News-accessor-service
+    container_name: news-accessor-service
+    ports:
+      - "3010:3010"
+    restart: on-failure
+    env_file:
+      - ./News-accessor-service/.env
+    networks:
+      - network-dapr
+
+  news-accessor-service-dapr:
+    image: "daprio/daprd:1.14.4"
+    container_name: news-accessor-service-dapr
+    command: [
+      "./daprd",
+      "-app-port", "3010",
+      "-app-id", "news-accessor-service",
+      "-app-protocol", "http",
+      "-dapr-http-port", "3510",
+      "--resources-path", "/dapr/components",
+      "-config", "/dapr/config.yaml",
+      "--log-level", "debug"
+    ]
+    volumes:
+      - "./dapr/components:/dapr/components"
+      - "./dapr/config.yaml:/dapr/config.yaml"
+    depends_on:
+      - redis
+    networks:
+      - network-dapr
+
+  news-manager-service:
+    build:
+      context: ./News-manager-service
+    container_name: news-manager-service
+    ports:
+      - "3011:3011"
+    restart: on-failure
+    env_file:
+      - ./News-manager-service/.env
+    networks:
+      - network-dapr
+
+  news-manager-service-dapr:
+    image: "daprio/daprd:1.14.4"
+    container_name: news-manager-service-dapr
+    command: [
+      "./daprd",
+      "-app-port", "3011",
+      "-app-id", "news-manager-service",
+      "-app-protocol", "http",
+      "-dapr-http-port", "3511",
+      "--resources-path", "/dapr/components",
+      "-config", "/dapr/config.yaml",
+      "--log-level", "debug"
+    ]
+    volumes:
+      - "./dapr/components:/dapr/components"
+      - "./dapr/config.yaml:/dapr/config.yaml"
+    depends_on:
+      - redis
+    networks:
+      - network-dapr
+
+  massage-manager-service:
+    build:
+      context: ./Massage-manager-service
+    container_name: massage-manager-service
+    ports:
+      - "3012:3012"
+    restart: on-failure
+    env_file:
+      - ./Massage-manager-service/.env
+    networks:
+      - network-dapr
+
+  massage-manager-service-dapr:
+    image: "daprio/daprd:1.14.4"
+    container_name: massage-manager-service-dapr
+    command: [
+      "./daprd",
+      "-app-port", "3012",
+      "-app-id", "massage-manager-service",
+      "-app-protocol", "http",
+      "-dapr-http-port", "3512",
+      "--resources-path", "/dapr/components",
+      "-config", "/dapr/config.yaml",
+      "--log-level", "debug"
+    ]
+    volumes:
+      - "./dapr/components:/dapr/components"
+      - "./dapr/config.yaml:/dapr/config.yaml"
+    depends_on:
+      - redis
+    networks:
+      - network-dapr
+
+  whatsapp-accessor-service:
+    build:
+      context: ./Whatsapp-accessor-service
+    container_name: whatsapp-accessor-service
+    ports:
+      - "3014:3014"
+    environment:
+      - WHATSAPP_API_URL=https://api.whatsapp.com/send
+      - WHATSAPP_API_KEY=your_api_key_here
+    networks:
+      - network-dapr
+
+  whatsapp-accessor-service-dapr:
+    image: "daprio/daprd:1.14.4"
+    container_name: whatsapp-accessor-service-dapr
+    command: [
+      "./daprd",
+      "-app-port", "3014",
+      "-app-id", "whatsapp-accessor-service",
+      "-app-protocol", "http",
+      "-dapr-http-port", "3514",
+      "--resources-path", "/dapr/components",
+      "-config", "/dapr/config.yaml",
+      "--log-level", "debug"
+    ]
+    volumes:
+      - "./dapr/components:/dapr/components"
+      - "./dapr/config.yaml:/dapr/config.yaml"
+    depends_on:
+      - redis
+    networks:
+      - network-dapr
+
+  ai-engine-service:
+    build:
+      context: ./AI-engine-service
+    container_name: ai-engine-service
+    ports:
+      - "3007:3007"
+    restart: on-failure
+    env_file:
+      - ./AI-engine-service/.env
+    networks:
+      - network-dapr
+
+  ai-engine-service-dapr:
+    image: "daprio/daprd:1.14.4"
+    container_name: ai-engine-service-dapr
+    command: [
+      "./daprd",
+      "-app-port", "3007",
+      "-app-id", "ai-engine-service",
+      "-app-protocol", "http",
+      "-dapr-http-port", "3522",
+      "--resources-path", "/dapr/components",
+      "-config", "/dapr/config.yaml",
+      "--log-level", "debug"
+    ]
+    volumes:
+      - "./dapr/components:/dapr/components"
+      - "./dapr/config.yaml:/dapr/config.yaml"
+    depends_on:
+      - redis
+    networks:
+      - network-dapr
+
+  email-accessor-service:
+    build:
+      context: ./Email-accessor-service
+    container_name: email-accessor-service
+    ports:
+      - "3013:3013"
+    restart: on-failure
+    env_file:
+      - ./Email-accessor-service/.env
+    networks:
+      - network-dapr
+
+  email-accessor-service-dapr:
+    image: "daprio/daprd:1.14.4"
+    container_name: email-accessor-service-dapr
+    command: [
+      "./daprd",
+      "-app-port", "3013",
+      "-app-id", "email-accessor-service",
+      "-app-protocol", "http",
+      "-dapr-http-port", "3513",
+      "--resources-path", "/dapr/components",
+      "-config", "/dapr/config.yaml",
+      "--log-level", "debug"
+    ]
+    volumes:
+      - "./dapr/components:/dapr/components"
+      - "./dapr/config.yaml:/dapr/config.yaml"
+    depends_on:
+      - redis
+    networks:
+      - network
+  core-manager-service:
+    build:
+      context: ./Core-manager-service
+    container_name: core-manager-service
+    ports:
+      - "3015:3015"
+    restart: on-failure
+    env_file:
+      - ./Core-manager-service/.env
+    networks:
+      - network-dapr
+
+  core-manager-service-dapr:
+    image: "daprio/daprd:1.14.4"
+    container_name: core-manager-service-dapr
+    command: [
+      "./daprd",
+      "-app-port", "3015",
+      "-app-id", "core-manager-service",
+      "-app-protocol", "http",
+      "-dapr-http-port", "3515",
+      "--resources-path", "/dapr/components",
+      "-config", "/dapr/config.yaml",
+      "--log-level", "debug"
+    ]
+    volumes:
+      - "./dapr/components:/dapr/components"
+      - "./dapr/config.yaml:/dapr/config.yaml"
+    depends_on:
+      - redis
+    networks:
+      - network-dapr

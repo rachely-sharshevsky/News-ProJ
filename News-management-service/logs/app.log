@@ -12,3 +12,4 @@
 2024-11-20T17:02:02.342Z [INFO]: Controller: Requesting news from the news-accessor-service
 2024-11-20T17:02:02.342Z [INFO]: Service: Invoking news-accessor-service with category technology
 2024-11-20T17:02:03.366Z [INFO]: Controller: Successfully returned news to the client
+2024-11-24T13:50:46.550Z [INFO]: News Manager Service is running on port 3011
