@@ -61,12 +61,16 @@ src/
    Create a `.env` file in the root directory with the following:
    ```
    PORT=3010
-   API_KEY=your_newdata_io_api_key
+   const API_URL = 'https://newsdata.io/api/1/latest';
+    const API_KEY = 'pub_59249dde2506a32587cd69627ca5807e15e1d';
+
    ```
 
 4. **Start the service**:
-   ```bash
-   npm start
+ 1. Clone the repository:
+   ```
+   git clone https://github.com/rachely-sharshevsky/News-ProJ.git
+   cd  News-accessore-service
    ```
 
 5. The service will run on `http://localhost:3010`.

@@ -88,9 +88,9 @@ src/
 
 ## Setup and Installation
 1. **Clone the repository**:
-   ```bash
-   git clone <repository_url>
-   cd user-accessor-service
+   ```
+   git clone https://github.com/rachely-sharshevsky/News-ProJ.git
+   cd User-accessor-service
    ```
 
 2. **Install dependencies**:

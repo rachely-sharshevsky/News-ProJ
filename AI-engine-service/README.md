@@ -46,10 +46,10 @@ src/
 - **Google Generative AI API Key**
 
 ## Setup and Installation
-1. Clone the repository:
-   ```bash
-   git clone <repository_url>
-   cd ai-engine-service
+1.git clone https://github.com/rachely-sharshevsky/News-ProJ.git
+
+
+   cd Ai-engine-service
    ```
 
 2. Install dependencies:

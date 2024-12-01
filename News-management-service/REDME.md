@@ -48,9 +48,10 @@ src/
 
 ## Setup and Installation
 1. **Clone the repository**:
-   ```bash
-   git clone <repository_url>
-   cd news-manager-service
+   
+   ```
+   git clone https://github.com/rachely-sharshevsky/News-ProJ.git
+   cd News-manager-service
    ```
 
 2. **Install dependencies**:

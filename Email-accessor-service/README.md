@@ -38,15 +38,15 @@ src/
 - **Nodemailer** for email communication.
 
 ## Setup and Installation
-1. **Clone the repository**:
-   ```bash
-   git clone <repository_url>
-   cd email-accessor-service
-   ```
+git clone https://github.com/rachely-sharshevsky/News-ProJ.git
+cd Email-accessor-service
+
 
 2. **Install dependencies**:
-   ```bash
-   npm install
+  1. Clone the repository:
+   ```
+   git clone https://github.com/rachely-sharshevsky/News-ProJ.git
+   cd Email-accessore-service
    ```
 
 3. **Configure environment variables**:
