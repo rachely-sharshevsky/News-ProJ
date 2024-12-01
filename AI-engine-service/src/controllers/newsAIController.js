@@ -1,4 +1,4 @@
-import NewsSummarizer from '../services/NewsSummarizer.js';
+import NewsSummarizer from '../services/newsSummarizer.js';
 import logger from '../utils/logger.js';
 
 class NewsAIController {
@@ -9,12 +9,9 @@ class NewsAIController {
             if (!Array.isArray(newsArray)) {
                 throw new Error('data must be an array.');
             }
-            
 
             logger.info('Received request to summarize all news articles.');
-        
-            
-           
+
             const result = await NewsSummarizer.summarize(newsArray);
 
             if (result.success) {
@@ -37,6 +34,3 @@ class NewsAIController {
 }
 
 export default NewsAIController;
-
-
-

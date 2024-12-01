@@ -2,8 +2,6 @@ const express = require('express');
 const userController = require('../controllers/userController');
 const validateObjectId = require('../middlewares/validateObjectId');
 
-const router = express.Router();
-
 // Register a new user
 router.post('/', userController.registerUser);
 

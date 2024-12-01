@@ -13,8 +13,7 @@ class NewsSummarizer {
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
         try {
-           
-            const formattedNews = newsArray.map(news => 
+            const formattedNews = newsArray.map(news =>
                 `Article ID: ${news.article_id}\nTitle: ${news.title}\nDescription: ${news.description}\nLink: ${news.link}\nSource: ${news.source_name}\nPublished Date: ${news.pubDate}\n\n`
             ).join("");
 

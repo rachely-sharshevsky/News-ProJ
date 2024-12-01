@@ -25,6 +25,7 @@ const userController = {
                 logger.warn(`Controller: User with ID ${userId} not found.`);
                 return res.status(404).json({ error: 'User not found' });
             }
+            logger.info(user,"🫁🫁🫁🫁")
             return res.status(200).json({
                 id: user._id,
                 name: user.name,

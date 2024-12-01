@@ -6,7 +6,6 @@ const { validateUser } = require('../utils/validation');
 exports.registerUser = async (req, res) => {
     try {
         const userData = req.body;
-
         // Validate user data
         validateUser(userData);
 

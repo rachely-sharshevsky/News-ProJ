@@ -15,12 +15,13 @@ class UserService {
             // Publish to Pub/Sub topic
             await daprClient.pubsub.publish("messagebus", "user-creation", userData);
             logger.info("Service: User creation request published to 'user-creation' topic.");
+            logger.debug(`Received data: ${JSON.stringify(req.body)}`);
 
             // Invoke Accessor service to save user in DB
             logger.info("Service: Invoking Accessor service to save user...");
             const response = await daprClient.invoker.invoke(
-                "User-accessor-service",
-                "createUser",
+                "user-accessor-service",
+                "user-creation",
                 "POST",
                 userData
             );

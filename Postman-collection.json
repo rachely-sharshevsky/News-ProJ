@@ -1,0 +1,356 @@
+{
+    "info": {
+        "name": "Microservices with Dapr (Core Direct) API Tests",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Core Manager Service",
+            "item": [
+                {
+                    "name": "Register User",
+                    "request": {
+                        "method": "POST",
+                        "url": "http://localhost:3015/core/register",
+                        "description": "Register a new user",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"Test User\",\n    \"email\": \"test@example.com\",\n    \"preferences\": [\n        \"tech\",\n        \"health\"\n    ],\n    \"communicationChannel\": \"email\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Fetch Latest News",
+                    "request": {
+                        "method": "GET",
+                        "url": "http://localhost:3015/core/news/latest",
+                        "description": "Fetch the latest news for a user"
+                    }
+                },
+                {
+                    "name": "Fetch Summarized News",
+                    "request": {
+                        "method": "GET",
+                        "url": "http://localhost:3015/core/news/summarized",
+                        "description": "Fetch summarized news for a user"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "User Manager Service",
+            "item": [
+                {
+                    "name": "Create User",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:3000/v1.0/invoke/user-manager-service/method/users",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "{{user_manager_port}}",
+                            "path": [
+                                "v1.0",
+                                "invoke",
+                                "user-manager-service",
+                                "method",
+                                "users"
+                            ]
+                        },
+                        "description": "Create a new user",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"name\": \"Test User\",\n    \"email\": \"testuser@example.com\",\n    \"preferences\": [\n        \"sports\",\n        \"news\"\n    ],\n    \"communicationChannel\": \"whatsapp\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Get User",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:3000/v1.0/invoke/user-manager-service/method/users/testUserId",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "{{user_manager_port}}",
+                            "path": [
+                                "v1.0",
+                                "invoke",
+                                "user-manager-service",
+                                "method",
+                                "users/testUserId"
+                            ]
+                        },
+                        "description": "Fetch user details by ID"
+                    }
+                },
+                {
+                    "name": "Update Preferences",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "http://localhost:3000/v1.0/invoke/user-manager-service/method/users/testUserId/preferences",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "{{user_manager_port}}",
+                            "path": [
+                                "v1.0",
+                                "invoke",
+                                "user-manager-service",
+                                "method",
+                                "users/testUserId/preferences"
+                            ]
+                        },
+                        "description": "Update user preferences",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"preferences\": [\n        \"science\",\n        \"technology\"\n    ]\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Delete User",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "http://localhost:3000/v1.0/invoke/user-manager-service/method/users/testUserId",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "{{user_manager_port}}",
+                            "path": [
+                                "v1.0",
+                                "invoke",
+                                "user-manager-service",
+                                "method",
+                                "users/testUserId"
+                            ]
+                        },
+                        "description": "Delete a user by ID"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "AI Engine Service",
+            "item": [
+                {
+                    "name": "Summarize News",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:3007/v1.0/invoke/ai-engine-service/method/api/news-ai/summarize",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "{{ai_engine_port}}",
+                            "path": [
+                                "v1.0",
+                                "invoke",
+                                "ai-engine-service",
+                                "method",
+                                "api/news-ai/summarize"
+                            ]
+                        },
+                        "description": "Summarize news articles",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"results\": [\n        {\n            \"title\": \"Tech News\",\n            \"description\": \"Latest tech news\"\n        }\n    ]\n}"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "News Manager Service",
+            "item": [
+                {
+                    "name": "Fetch News by Category",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:3011/v1.0/invoke/news-manager-service/method/news",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "{{news_manager_port}}",
+                            "path": [
+                                "v1.0",
+                                "invoke",
+                                "news-manager-service",
+                                "method",
+                                "news"
+                            ]
+                        },
+                        "description": "Fetch news by category",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"category\": \"technology\"\n}"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Email Accessor Service",
+            "item": [
+                {
+                    "name": "Send Email",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:3013/v1.0/invoke/email-accessor-service/method/send-email",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "{{email_service_port}}",
+                            "path": [
+                                "v1.0",
+                                "invoke",
+                                "email-accessor-service",
+                                "method",
+                                "send-email"
+                            ]
+                        },
+                        "description": "Send an email",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"emailAddress\": \"recipient@example.com\",\n    \"emailBody\": \"This is a test email.\",\n    \"params\": {\n        \"subject\": \"Test Email\"\n    }\n}"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "WhatsApp Accessor Service",
+            "item": [
+                {
+                    "name": "Send WhatsApp Message",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:3014/v1.0/invoke/whatsapp-accessor-service/method/send-whatsapp",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "{{whatsapp_service_port}}",
+                            "path": [
+                                "v1.0",
+                                "invoke",
+                                "whatsapp-accessor-service",
+                                "method",
+                                "send-whatsapp"
+                            ]
+                        },
+                        "description": "Send a WhatsApp message",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"phoneNumber\": \"+123456789\",\n    \"message\": \"Hello from WhatsApp!\"\n}"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Message Manager Service",
+            "item": [
+                {
+                    "name": "Send Message",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:3012/v1.0/invoke/message-manager-service/method/message/send",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "{{message_manager_port}}",
+                            "path": [
+                                "v1.0",
+                                "invoke",
+                                "message-manager-service",
+                                "method",
+                                "message/send"
+                            ]
+                        },
+                        "description": "Send a message via specified channel",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"channel\": \"email\",\n    \"emailAddress\": \"user@example.com\",\n    \"subject\": \"Your Update\",\n    \"emailBody\": \"Latest updates for you\"\n}"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "News Accessor Service",
+            "item": [
+                {
+                    "name": "Fetch News",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:3010/v1.0/invoke/news-accessor-service/method/news",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "{{news_accessor_port}}",
+                            "path": [
+                                "v1.0",
+                                "invoke",
+                                "news-accessor-service",
+                                "method",
+                                "news"
+                            ]
+                        },
+                        "description": "Fetch news from external APIs",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"category\": \"health\"\n}"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "variable": [
+        {
+            "key": "core_service_url",
+            "value": "http://localhost:3015"
+        },
+        {
+            "key": "user_manager_port",
+            "value": "3000"
+        },
+        {
+            "key": "user_accessor_port",
+            "value": "3001"
+        },
+        {
+            "key": "news_manager_port",
+            "value": "3011"
+        },
+        {
+            "key": "news_accessor_port",
+            "value": "3010"
+        },
+        {
+            "key": "email_service_port",
+            "value": "3013"
+        },
+        {
+            "key": "whatsapp_service_port",
+            "value": "3014"
+        },
+        {
+            "key": "message_manager_port",
+            "value": "3012"
+        },
+        {
+            "key": "ai_engine_port",
+            "value": "3007"
+        }
+    ]
+}
